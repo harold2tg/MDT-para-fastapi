@@ -1,0 +1,71 @@
+# Python general
+*.pyc
+*.pyo
+*.pyd
+*.pycache/
+__pycache__/
+*.log
+*.sqlite3
+
+# Entornos virtuales
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Configuración de IDEs
+.vscode/
+.idea/
+*.iml
+
+# Archivos de entorno
+.env
+.env.*
+
+# Docker
+*.pid
+*.log
+docker-compose.override.yml
+docker-compose.debug.yml
+docker-compose.local.yml
+docker-compose.prod.yml
+**/Dockerfile.*
+**/Dockerfile
+
+# Datos generados
+pgadmin_data/
+postgres-db-volume/
+*.db
+
+# Archivos de caché
+*.swp
+*.swo
+.cache/
+*.DS_Store
+
+# Configuración de sistemas
+Thumbs.db
+*.bak
+*.tmp
+*.old
+
+# Configuración de distribución
+dist/
+build/
+*.egg-info/
+.eggs/
+
+# Configuración de cobertura de tests
+htmlcov/
+.tox/
+.nox/
+.coverage
+*.coverage
+coverage.xml
+*.cover
+
+# Otros archivos relacionados con el despliegue
+*.pem
+*.crt
+*.key
