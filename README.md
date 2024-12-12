@@ -37,12 +37,17 @@ Crea un archivo .env en la raíz del proyecto con el siguiente contenido:
 
 # Variables para PostgreSQL
 DATABASE_HOST=aqui la ip del servidor
+
 POSTGRES_USER= aqui va el usuario
+
 POSTGRES_PASSWORD=aqui va la password
+
 POSTGRES_DB=aqui va el nombre del base de datos
+
 
 # Variables para pgAdmin
 PGADMIN_DEFAULT_EMAIL=el correo 
+
 PGADMIN_DEFAULT_PASSWORD= la password
 
 3. Construir los contenedores
