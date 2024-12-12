@@ -28,7 +28,7 @@ Instalación y Configuración
 
 1. Clonar el repositorio
 
-git clone https://github.com/usuario/proyecto-api.git
+git clone https://github.com/harold2tg/MDT-para-fastapi
 cd proyecto-api
 
 2. Configurar variables de entorno
@@ -36,14 +36,14 @@ cd proyecto-api
 Crea un archivo .env en la raíz del proyecto con el siguiente contenido:
 
 # Variables para PostgreSQL
-DATABASE_HOST=127.0.0.1
-POSTGRES_USER=postgres
-POSTGRES_PASSWORD=password
-POSTGRES_DB=mydb
+DATABASE_HOST=aqui la ip del servidor
+POSTGRES_USER= aqui va el usuario
+POSTGRES_PASSWORD=aqui va la password
+POSTGRES_DB=aqui va el nombre del base de datos
 
 # Variables para pgAdmin
-PGADMIN_DEFAULT_EMAIL=admin@admin.com
-PGADMIN_DEFAULT_PASSWORD=admin
+PGADMIN_DEFAULT_EMAIL=el correo 
+PGADMIN_DEFAULT_PASSWORD= la password
 
 3. Construir los contenedores
 
