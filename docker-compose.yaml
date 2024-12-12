@@ -27,11 +27,9 @@ services:
 
   postgres:
     image: postgres:15
-    environment:
-      - DATABASE_HOST=127.0.0.1
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=mydb
+    container_name: postgres-v15
+    env_file:
+      - .env
     volumes:
       - ./postgres-db-volume:/var/lib/postgresql/data
     ports:
@@ -41,9 +39,9 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4
-    environment:
-      PGADMIN_DEFAULT_EMAIL: "admin@admin.com"
-      PGADMIN_DEFAULT_PASSWORD: "admin"
+    container_name: pgadmin4
+    env_file:
+      - .env
     ports:
       - 16543:80
     volumes:
